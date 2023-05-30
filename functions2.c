@@ -57,14 +57,12 @@ int print_pointer(va_list types, char buffer[],
 	/*return (write(1, &buffer[i], BUFF_SIZE - i - 1));*/
 
 	return (write_pointer(buffer, ind, length, width,
-				flags, padd, extra_c, padd_start));
+        flags, padd, extra_c, padd_start));
 }
 
 /**
- * print_non_printable - Prints ascii codes in hexa
- * of non printable chars
- *
- * @types: Lista of arguments
+ * print_non_printable - Prints ascii codes in hexa of non printable chars
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width
