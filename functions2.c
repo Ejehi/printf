@@ -55,12 +55,14 @@ int print_pointer(va_list types, char buffer[],
 
 	ind++;
 	/*return (write(1, &buffer[i], BUFF_SIZE - i - 1));*/
-	return (write_pointer(buffer, ind, length,
-		width, flags, padd, extra_c, padd_start));
+
+	return (write_pointer(buffer, ind, length, width,
+				flags, padd, extra_c, padd_start));
 }
 
 /**
- * print_non_printable - Prints ascii codes in hexa of non printable chars
+ * print_non_printable - Prints ascii codes in hexa
+ * of non printable chars
  *
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
